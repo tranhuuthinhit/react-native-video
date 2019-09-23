@@ -8,6 +8,10 @@
 
 RCT_EXPORT_MODULE();
 
+@synthesize bridge = _bridge;
+
+RCTVideo * _video;
+
 - (UIView *)view
 {
   return [[RCTVideo alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
